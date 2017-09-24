@@ -1,0 +1,625 @@
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 0.5rem;
+  padding: 0;
+}
+
+h3 {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+h4 {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Main Container */
+.maincontainer {
+  margin: 0 auto;
+  width: 960px;
+}
+
+
+/* Logo */
+.logo {
+  width: 100%;
+  padding: 0.66rem 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: row nowrap;
+  background-color: black;
+  height: 1.5rem;
+}
+
+.logo img{
+  height: 1.5rem;
+  margin: 0rem 1rem 0 3rem;
+}
+
+
+/* Banner */
+.banner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url(../resources/moto.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25rem;
+}
+
+.text {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  flex-direction: column;
+  padding: 2rem 3rem;
+  width: 20rem;
+  background-color: black;
+  position: relative;
+}
+
+/* Menu */
+.navigation {
+  display: flex;
+  justify-content: center;
+  background-color: firebrick;
+  padding: 0.75rem 0;
+}
+
+.navigation .buttons {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 3rem;
+}
+
+.navigation .menubutton {
+  display: none;
+}
+
+/* Begin Products Grid */
+
+  /* Begin first row */
+.products {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.uppergrid {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  padding-top: 3rem;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 30%;
+  border: 4px solid black;
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.photo2 {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+img {
+     height: 9rem;
+ }
+
+/* Size issue so new divs required for glasses */
+ .photo3 {
+   display: flex;
+   justify-content: center;
+   padding: 4rem 0;
+ }
+
+  .photo3 img {
+      height: 5rem;
+  }
+  /* End first row */
+
+  /* Begin second row */
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+  flex-direction: column;
+  text-align: center;
+  background-color: black;
+  padding: 0.5rem 0;
+}
+
+.lowergrid {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  padding-top: 3rem;
+}
+
+.name2 {
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+  flex-direction: column;
+  padding: 1rem 0;
+  width: 35%;
+}
+
+.details{
+  display: flex;
+  justify-content: flex-start;
+  background-color: black;
+  padding: 1rem 2rem;
+  text-align: left;
+}
+
+.numbers {
+  margin-top: 0.25rem;
+  color: black;
+}
+  /* End second row */
+/* End Products Grid */
+
+/* Begin Footer */
+footer {
+  padding-left: 1rem;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: black;
+  height: 12rem;
+}
+/* End Footer */
+
+/* Begin 1024px Media Queries */
+
+@media only screen and (max-width: 1024px) {
+
+  /* Logo */
+  .logo {
+    width: 100%;
+    padding: 0.66rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: row nowrap;
+    background-color: black;
+    height: 1.5rem;
+  }
+
+  .logo img{
+    height: 1.5rem;
+    margin: 0rem 1rem 0 5rem;
+  }
+
+  /* Banner */
+  .banner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(../resources/moto.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25rem;
+  }
+
+  .text {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: column;
+    padding: 2rem 3rem;
+    width: 20rem;
+    margin-left: 2rem;
+    background-color: black;
+    position: relative;
+  }
+
+
+  /* Menu */
+  .navigation {
+    display: flex;
+    justify-content: center;
+    background-color: firebrick;
+    padding: 0.75rem 0;
+  }
+
+  .navigation .buttons {
+    display: none;
+  }
+
+  .navigation .menubutton {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+
+  .products {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 8rem;
+  }
+
+  .uppergrid {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+    width: 100%;
+  }
+
+  .box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 40%;
+    border: 4px solid black;
+  }
+
+  .photo .photo2 {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+  }
+
+  .name2 {
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    flex-direction: column;
+    padding: 1rem 0;
+    width: 41%;
+  }
+
+  .nobox3 {
+    display: none;
+  }
+
+.numbers {
+    margin-top: 0.25rem;
+}
+
+   img {
+       height: 9rem;
+   }
+
+}
+/* End 1024px screen*/
+
+
+/* Begin 470px Media Queries */
+
+@media only screen and (max-width: 470px) {
+
+  h1 {
+      font-size: 1.5rem;
+  }
+
+  h3 {
+      font-size: 0.75rem;
+  }
+
+  .maincontainer {
+    width: 100%;
+    margin: 0;
+  }
+
+  .companyname {
+    display: none;
+  }
+
+  /* Logo */
+
+  .logo {
+    padding: 0.66rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 1.5rem;
+  }
+
+  .logo img{
+    height: 1.5rem;
+    margin: 0;
+  }
+
+
+  /* Banner */
+  .banner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(../resources/moto.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .text {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin: 6rem 0 2rem 0;
+    padding: 2rem 3rem;
+    background-color: black;
+    position: relative;
+  }
+
+  /* Menu */
+  .navigation {
+    display: flex;
+    justify-content: center;
+    background-color: firebrick;
+    padding: 0.75rem 0;
+    width: 100%;
+
+  }
+
+  .navigation .buttons {
+    display: none;
+  }
+
+  .navigation .menubutton {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+
+  .products {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .uppergrid {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin: 0;
+    padding-top: 3rem;
+  }
+
+  .box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 4px solid black;
+  }
+
+.nobox1 {
+  width: 68%;
+
+}
+
+  .photo {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+  }
+
+  .nobox2 {
+    display: none;
+  }
+
+  .nobox3 {
+    display: none;
+  }
+
+  .lowergrid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+
+  .name2 {
+    margin: 0 4.5rem;
+    width: 69%;
+  }
+
+  .numbers {
+    margin-top: 0.25rem;
+  }
+
+   img {
+       height: 9rem;
+   }
+
+}
+/* End 470px screen */
+
+/* Begin 410px Media Queries
+
+@media only screen and (max-width: 410px) {
+
+/* Begin 410px Media Queries */
+
+@media only screen and (max-width: 410px) {
+
+  h1 {
+      font-size: 1.5rem;
+  }
+
+  h3 {
+      font-size: 0.75rem;
+  }
+
+  .maincontainer {
+    width: 100%;
+    margin: 0;
+  }
+
+  .companyname {
+    display: none;
+  }
+
+  /* Logo */
+
+  .logo {
+    padding: 0.66rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 1.5rem;
+  }
+
+  .logo img{
+    height: 1.5rem;
+    margin: 0;
+  }
+
+
+  /* Banner */
+  .banner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(../resources/moto.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+
+  .text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin-top: 6rem;
+    padding: 2rem 3rem;
+    background-color: black;
+    position: relative;
+  }
+
+  /* Menu */
+  .navigation {
+    display: flex;
+    justify-content: center;
+    background-color: firebrick;
+    padding: 0.75rem 0;
+    width: 100%;
+
+  }
+
+  .navigation .buttons {
+    display: none;
+  }
+
+  .navigation .menubutton {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    /*padding: 0 0.5rem;*/
+  }
+
+  .products {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .uppergrid {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3rem;
+  }
+
+  .box .nobox1 {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 4px solid black;
+  }
+
+  .photo {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+  }
+
+  .nobox2 {
+    display: none;
+  }
+
+  .nobox3 {
+    display: none;
+  }
+
+  .lowergrid {
+    margin: 0;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+
+  .name2 {
+    width: 100%;
+  }
+
+  .numbers {
+    margin-top: 0.25rem;
+  }
+
+   img {
+       height: 9rem;
+   }
+
+}
+/* End 410px screen */
